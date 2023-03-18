@@ -1,0 +1,11 @@
+{% extends "sphinx_book_theme/layout.html" %}
+{%- block extrahead %}
+{{ super() }}
+<!-- Matomo Tag Manager -->
+<!-- End Matomo Tag Manager -->
+{% endblock %}
+
+
+{% block body_tag %}
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="100">
+{%- endblock %}

@@ -1,0 +1,6 @@
+[submodule "submodules/openg2p-registry"]
+	path = submodules/openg2p-registry
+	url = git@github.com:OpenG2P/openg2p-registry.git
+[submodule "submodules/openg2p-program"]
+	path = submodules/openg2p-program
+	url = git@github.com:OpenG2P/openg2p-program.git

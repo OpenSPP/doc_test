@@ -1,0 +1,11 @@
+# Dependencies
+/bin
+/include
+/lib
+/lib64
+
+# Generated files
+pyvenv.cfg
+/_build
+/styles/Microsoft
+
