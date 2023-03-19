@@ -1,3 +1,6 @@
-OpenSPP
 buildout
+Kanban
 npm
+Odoo
+OpenSPP
+URL
