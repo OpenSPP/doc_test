@@ -157,8 +157,12 @@ extensions = [
     "sphinx.ext.viewcode",
     "sphinx.ext.autosummary",
     "sphinx.ext.graphviz",
+    "sphinx_tabs.tabs",
     "notfound.extension",
 ]
+
+sphinx_tabs_disable_tab_closing = True
+sphinx_tabs_disable_css_loading = True
 
 # If true, the Docutils Smart Quotes transform, originally based on SmartyPants
 # (limited to English) and currently applying to many languages, will be used
@@ -190,6 +194,8 @@ source_suffix = {
     ".md": "markdown",
     ".rst": "restructuredtext",
 }
+
+default_role = 'literal'
 
 # The master toctree document.
 master_doc = "index"
@@ -256,6 +262,7 @@ myst_substitutions = {
 # the entire OpenSPP Documentation is built.
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3/", None),
+    "odoo": ("https://www.odoo.com/documentation/15.0/", None),
 }
 
 
@@ -295,7 +302,7 @@ notfound_template = "404.html"
 html_theme = "sphinx_book_theme"
 
 # html_logo = "_static/logo.svg"
-# html_favicon = "_static/favicon.ico"
+html_favicon = "_static/icon_192.png"
 
 html_css_files = ["custom.css", ("print.css", {"media": "print"})]
 

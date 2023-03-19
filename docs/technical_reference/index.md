@@ -6,6 +6,7 @@
 :maxdepth: 2
 :hidden: true
 
+external_api
 architecture
 programs/concepts
 programs/dashboards

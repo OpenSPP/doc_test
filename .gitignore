@@ -9,3 +9,8 @@ pyvenv.cfg
 /_build
 /styles/Microsoft
 
+.DS_Store
+*.pyc
+*.pyo
+*.pyd
+*.so

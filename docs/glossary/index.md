@@ -26,7 +26,14 @@ Authentication
     identity—that is, to prove that they are the same person to whom the identity or credential was originally
     issued.
 
-Beneficiary, beneficiaries
+Api key
+    A unique identifier used to authenticate a user, developer, or calling program to an API.
+
+    See {ref}`api/external_api/keys`.
+
+
+Beneficiary
+Beneficiaries
     Individuals, families, or households who are enrolled in a program who are recipients of a benefit or service.
 
 Beneficiary registry
@@ -98,10 +105,22 @@ Eligibility
 Eligibility criteria
     Eligibility criteria are factors used to determine whether an individual, family, or household is eligible (inclusion criteria) or not eligible (exclusion criteria) to participate in a program, such as social protection benefits. These criteria are typically defined by the government or organization implementing the program and may include factors such as age, income level, household size, employment status, or disability status. By defining eligibility criteria, organizations can determine which individuals or households are eligible to receive benefits under the program.
 
+ERP
+    [Enterprise resource planning](https://en.wikipedia.org/wiki/Enterprise_resource_planning) (ERP) is a type of software that organizations use to manage day-to-day business activities such as accounting, procurement, project management, risk management, and compliance. ERP systems integrate all data and processes of an organization, streamlining operations and enabling the flow of information between all business functions inside the boundaries of the organization and managing the connections to outside stakeholders.
+    
+    [OpenSPP](https://openspp.org/) is an open-source ERP system for social protection programs.
+
+external id
+external identifier
+external identifiers
+    String identifier stored in ``ir.model.data``, can be used to refer to a record regardless of its database identifier during data imports or export/import roundtrips.
+
+    External identifiers are in the form {samp}`{module}.{id}` (e.g. ``account.invoice_graph``). From within a module, the {samp}`{module}.` prefix can be left out.
+
+    Sometimes referred to as "xml id" or ``xml_id`` as XML-based {ref}`reference/data` make extensive use of them.
+
 Family
-    A family is defined for operational purposes as “a group of two people or more related by birth, marriage, or
-    adoption and residing together; all such people (including related subfamily members) are considered as
-    members of one family.”
+    A family is defined for operational purposes as “a group of two people or more related by birth, marriage, or adoption and residing together; all such people (including related subfamily members) are considered as members of one family.”
 
 Geographic targeting mechanisms
     A means of focusing interventions on individuals, families, or households living in a certain area.
@@ -287,6 +306,15 @@ Verb
 
 Object URL
     The target object of the {term}`Request`
+
+OpenID Connect
+OIDC
+    OpenID Connect is an authentication protocol based on the OAuth 2.0 protocol.
+    It enables Clients to verify the identity of the End-User based on the authentication performed by an Authorization Server, as well as to obtain basic profile information about the End-User in an interoperable and REST-like manner.
+
+    ```{seealso}
+    See also https://openid.net/connect/.
+    ```
 
 Authorization Header
     Part of the {term}`Request` that is responsible for the authentication related to the right user or service to ask for a {term}`Response`.
