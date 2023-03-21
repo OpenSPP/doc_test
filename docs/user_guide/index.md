@@ -17,8 +17,10 @@ myst:
 - [Geotargeting](geotargeting)
 - [Grievance Redressal Management](grievance_redressal_management)
 - [Hardware Integration](hardware_integration)
-- [Managing Social Protection Programs](managing_social_protection_programs)
+- [Indicators](indicators)
+- [Social protection programs and cycles](programs_and_cycles)
 - [Proxy Means Test](proxy_means_test)
+- [Programs and Cycles](programs_and_cycles)
 - [Registering Individuals and Groups](Registering_individuals_and_groups)
 - [Vouchers](vouchers)
 
@@ -53,8 +55,9 @@ consent_management
 dashboards_and_reports
 geotargeting
 grievance_redressal_management
+indicators
 hardware_integration
-managing_social_protection_programs
+programs_and_cycles
 proxy_means_test
 Registering_individuals_and_groups
 vouchers

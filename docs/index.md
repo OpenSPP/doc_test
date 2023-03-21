@@ -36,7 +36,7 @@ OpenSPP is based on the following principles:
 
 The project is currently under development, and everything is evolving rapidly as a result of our users' comments. If you have any questions or needs, please do not hesitate to contact the team through Github issues or our [Website](https://openspp.org/).
 
-To learn more, take a look at the [technical_reference/architecture](technical_reference/architecture) pages.
+To learn more, take a look at the [Architecture](technical_reference/architecture) page.
 
 
 ```{toctree}
