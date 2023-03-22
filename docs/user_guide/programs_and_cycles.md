@@ -43,7 +43,7 @@ The entitlement manager determines what a beneficiary is entitled to for a given
 ```{figure} programs_and_cycles/program-wizard-1.png
 :align: center
 :height: 300
-:alt: View of a user’s area import page
+:alt: View of a program creation wizard emphasizing the first step in OpenSPP
 ```
 
 - Give a name to your program.

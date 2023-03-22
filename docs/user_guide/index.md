@@ -52,7 +52,9 @@ access_management
 audit_log
 change_requests
 consent_management
+custom_fields
 dashboards_and_reports
+event_data
 geotargeting
 grievance_redressal_management
 indicators

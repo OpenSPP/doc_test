@@ -464,3 +464,21 @@ div.viewcode-block:target {
       padding-top:0
   }
 }
+
+dl.py > dd, dl.js > dd, dl.o-definition-list > dd {
+  margin-top: -0.075rem;
+  margin-left: 0;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  border-left: 3px solid #F2F2F2;
+}
+
+.o_code, .sig [class^="sig-"] {
+  display: inline-block;
+  overflow-wrap: anywhere;
+  background: #F2F2F2;
+  font-size: 0.875rem;
+  font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+  font-weight: inherit;
+  /* color: inherit; */
+}

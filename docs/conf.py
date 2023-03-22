@@ -119,7 +119,7 @@ else:
 
 project = "OpenSPP Documentation"
 copyright = "OpenSPP"
-author = "the OpenSPP community"
+author = "The OpenSPP community"
 trademark_name = "OpenSPP"
 now = datetime.now()
 year = str(now.year)
