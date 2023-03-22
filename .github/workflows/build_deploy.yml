@@ -1,4 +1,4 @@
-name: Build and deploy Plone 6 documentation to 6.docs.plone.org
+name: Build and deploy OpenSPP documentation
 
 on:
   push:
@@ -19,9 +19,7 @@ jobs:
           cache: 'pip'
       - name: Install dependencies
         run: |
-          pip install -q -r requirements-initial.txt
-          pip install -q -r requirements.txt
-          pip freeze
+          pip install -q -r requirements_frozen.txt
 
       # - name: Run Vale
       #   run: make vale
