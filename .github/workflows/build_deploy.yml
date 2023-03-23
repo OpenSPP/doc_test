@@ -19,7 +19,7 @@ jobs:
           cache: 'pip'
       - name: Install dependencies
         run: |
-          sudo apt-get install libsasl2-dev python-dev libldap2-dev libssl-dev &&
+          sudo apt-get install libsasl2-dev libldap2-dev libssl-dev &&
           pip install -q -r requirements_frozen.txt
 
       # - name: Run Vale
