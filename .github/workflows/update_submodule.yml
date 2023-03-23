@@ -10,7 +10,7 @@ jobs:
       # Checkout
       - uses: actions/checkout@v3
         with: 
-          ref: main
+          ref: master
           submodules: true
 
       - name: Submodule update
