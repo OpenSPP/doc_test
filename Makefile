@@ -33,12 +33,9 @@ distclean:  ## Clean docs build directory and Python virtual environment
 	cd $(DOCS_DIR) && rm -rf $(BUILDDIR)/
 	rm -rf ./bin/ ./lib/ ./lib64 ./include ./pyvenv.cfg
 
-
 bin/python:
 	python3 -m venv . || virtualenv --clear --python=python3 .
-	bin/pip install -r requirements-initial.txt
-	bin/pip install -r requirements.txt
-	bin/pip install -r requirements_odoo.txt
+	bin/pip install -r requirements_frozen.txt
 
 docs/openg2p-program:
 	git submodule init; \
