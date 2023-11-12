@@ -1,0 +1,21 @@
+name: Report an Issue
+description: Report an issue with OpenSPP Documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this issue report!
+  - type: checkboxes
+    id: openspp-versions
+    attributes:
+      label: OpenSPP Documentation versions affected
+      options:
+        - label: 1.0.x
+        - label: 1.1.x
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: If relevant, please include links to the affected resources, screenshots, and any other helpful information.
+    validations:
+      required: true

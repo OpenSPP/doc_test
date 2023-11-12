@@ -52,7 +52,8 @@ odoo_source_read_replace_vals = {
 
 
 # Search for the directory of odoo sources to know whether autodoc should be used on the dev doc
-odoo_sources_candidate_dirs = (Path('odoo'), Path('../odoo'), Path('../../dockerdoo/src/odoo'))
+# odoo_sources_candidate_dirs = (Path('odoo'), Path('../odoo'), Path('../../dockerdoo/src/odoo'))
+odoo_sources_candidate_dirs = (Path('../submodules/odoo'), )
 odoo_sources_dirs = [
     d for d in odoo_sources_candidate_dirs if d.is_dir() and (d / 'odoo-bin').exists()
 ]
@@ -79,18 +80,27 @@ else:
     print(f"Found Odoo sources in {odoo_dir}.")
     import odoo.addons
 
-    # import my addons
-    if "dockerdoo" in str(odoo_dir):
-        print("Found Odoo sources in dockerdoo dev environment.")
-        my_addons_dir = os.path.abspath(os.path.join(odoo_dir, '..', '..', 'custom'))
+    # # import my addons
+    # if "dockerdoo" in str(odoo_dir):
+    #     print("Found Odoo sources in dockerdoo dev environment.")
+    #     my_addons_dir = os.path.abspath(os.path.join(odoo_dir, '..', '..', 'custom'))
+    #     my_addons_dir = Path(my_addons_dir)
+    #     for folder in my_addons_dir.iterdir():
+    #         if folder.is_dir():
+    #             sys.path.insert(0, str(folder))
+    #             odoo.addons.__path__.append(str(folder))
+    #             print(f"Found custom addon in {folder}.")
+
+
+    if "submodules" in str(odoo_dir):
+        print("Found Odoo sources in submodules dev environment.")
+        my_addons_dir = os.path.abspath(os.path.join(odoo_dir, '..'))
         my_addons_dir = Path(my_addons_dir)
-        # my_addons_dir = odoo_dir.__parent__.__parent__ / "custom"
         for folder in my_addons_dir.iterdir():
-            if folder.is_dir():
+            if folder.is_dir() and not folder.name == 'odoo':
                 sys.path.insert(0, str(folder))
                 odoo.addons.__path__.append(str(folder))
                 print(f"Found custom addon in {folder}.")
-
 
     odoo.addons.__path__.append(str(odoo_dir) + '/addons')
     from odoo import release as odoo_release  # Don't collide with Sphinx's 'release' config option
